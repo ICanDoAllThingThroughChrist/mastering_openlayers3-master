@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+.map-container {
+    width: 100%;
+    height: 100%; /*Fallback*/
+    height: 100vh;
+}
+.map {
+    width: 100%;
+    height: calc(100% - 3.5em);
+}
+.nosupport {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.notification-bar {
+    width: 100%;
+    height: 1.5em;
+    display: table;
+}
+.notification-bar > div {
+    height: 100%;
+    display: table-cell;
+    border: 1px solid grey;
+    width: 34%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.notification-bar .message-bar {
+    width: 66%;
+}
+.notification-bar .ol-mouse-position {
+    font-family: monospace;
+    text-align: center;
+    position: static;
+}
+.toolbar {
+    height: 2em;
+    display: table;
+    padding-left: .2em;
+}
+.toolbar .ol-control {
+    position: static;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+.toolbar .ol-control button {
+    border-radius: 2px;
+    background-color: rgba(219,63,63,.5);
+    width: 2em;
+    display: inline-block;
+}
+.toolbar .ol-control button:hover {
+    background-color: rgba(219,63,63,1);
+}
